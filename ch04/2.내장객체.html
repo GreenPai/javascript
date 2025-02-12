@@ -191,8 +191,22 @@
     </script>
 
     <h4>Math</h4>
-
+    
     <h4>Date</h4>
+    <script>
+        const date = new Date();
+        document.write(date + '<br>');
+    
+        let yy = date.getFullYear();
+        let mm = date.getMonth();
+        let dd = date.getDate();
+        let hh = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+
+        // 템플릿 문자열
+        document.write(`${yy}년 ${mm}월 ${dd}일 ${hh} : ${min} : ${sec}`);
+    </script>
 
 </body>
 </html>
